@@ -104,11 +104,6 @@ img {
   display: flex;
 }
 
-.logo-icon-mail,
-.logo-icon-tel {
-  margin-right: 10px;
-}
-
 .header-item-auth:not(:last-child),
 .header-item-menu:not(:last-child) {
   margin-right: 50px;
@@ -145,21 +140,38 @@ img {
   padding-bottom: 32px;
 }
 
+.logo-icon {
+  margin-right: 10px;
+  fill: #2196f3;
+}
+
+.header-mail:hover,
+.header-mail:hover,
 .header-tel:hover,
-.header-tel:focus .header-tel {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+.header-tel:focus .header-mail:hover,
+.header-mail:hover,
+.header-tel:hover,
+.header-tel:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
-.header-mail:focus,
-.header-mail:hover {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+.icon-hover {
+  color: #2196f3;
 }
-
 /* --------------hero------------- */
+.background-image-hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-section/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -191,7 +203,16 @@ img {
 }
 
 /* ---------------about-us------------ */
+
+.about-us-image {
+  width: 270px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px 25px 100px;
+}
+
 .about-us-title {
+  margin-top: 30px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -247,6 +268,10 @@ img {
 }
 
 /* ---------------our-team------------ */
+.our-team {
+  background-color: #f5f4fa;
+}
+
 .our-team-main-title {
   font-weight: bold;
   font-size: 36px;
@@ -265,6 +290,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 
 .our-team-card:not(:last-child) {
@@ -279,7 +305,7 @@ img {
 .our-team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -288,13 +314,75 @@ img {
 .our-team-jobs-name {
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
+.socials-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+/*---------------our-clients---------*/
+
+.our-clients-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.our-clients-list {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.our-clients-item {
+  width: 170px;
+  padding: 16px 32px 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-clients-item:hover .our-clients-image {
+  fill: var(--accent-color);
+}
+.our-clients-item:hover {
+  border: 1px solid var(--accent-color);
+}
 /* ---------------footer------------ */
+.footer-row {
+  display: flex;
+}
+
+.contacts-footer {
+  margin-right: 70px;
+}
+
 .footer-logo {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -332,6 +420,33 @@ img {
 
 .footer-item:first-child {
   margin-top: 20px;
+}
+
+.socials-text-footer {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.our-team-socials-footer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.socials-link-footer {
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .footer {
