@@ -104,6 +104,11 @@ img {
   display: flex;
 }
 
+.logo-icon-mail,
+.logo-icon-tel {
+  margin-right: 10px;
+}
+
 .header-item-auth:not(:last-child),
 .header-item-menu:not(:last-child) {
   margin-right: 50px;
@@ -129,7 +134,8 @@ img {
 
 .header-tel,
 .header-mail {
-  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -140,10 +146,15 @@ img {
 }
 
 .header-tel:hover,
-.header-tel:focus,
+.header-tel:focus .header-tel {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .header-mail:focus,
 .header-mail:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* --------------hero------------- */
